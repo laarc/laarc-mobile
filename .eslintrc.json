@@ -4,5 +4,29 @@
         "node": true,
         "es6": true
     },
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "rules": {
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "react/prop-types": "off",
+        "no-plusplus": "off",
+        "no-unused-vars": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": [2, { "exceptMethods": [ "render", "componentWillMount", "componentDidMount", "componentWillUnmount", "componentDidCatch" ] }],
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "no-constant-condition": "off",
+        "security/detect-object-injection": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "function-paren-newline": "off",
+        "global-require": "off",
+        "import/no-dynamic-require": "off",
+        "object-curly-newline": "off",
+        "operator-linebreak": "off"
+    }
 }

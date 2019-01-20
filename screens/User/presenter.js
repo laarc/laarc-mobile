@@ -1,14 +1,21 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
-export default class SettingsScreen extends React.Component {
+import { AuthView, ProfileView } from './views';
+
+export default class UserScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
 
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <View />;
+    const { isAuth } = this.props;
+
+    return (
+      <SafeAreaView>
+        {isAuth
+          ? <ProfileView /> : <AuthView />}
+      </SafeAreaView>
+    );
   }
 }

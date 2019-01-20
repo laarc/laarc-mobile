@@ -1,7 +1,9 @@
 import { Dimensions } from 'react-native';
 
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
+const { width, height } = Dimensions.get('window');
+
+const gridUnit = 8;
+const smallestUnit = 4;
 
 export default {
   window: {
@@ -9,4 +11,8 @@ export default {
     height,
   },
   isSmallDevice: width < 375,
+  smallestUnit,
+  gridUnit,
+  viewPadding: gridUnit * 2,
+  storyRowHeight: 120,
 };

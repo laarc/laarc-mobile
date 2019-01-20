@@ -4,10 +4,17 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 
-import { HomeScreen, SubmitScreen, UserScreen } from '../screens';
+import { HomeScreen, SubmitScreen, UserScreen, StoryDetailScreen } from '../screens';
 
 const HomeStack = createStackNavigator({
   home: HomeScreen,
+  storyDetail: {
+    screen: StoryDetailScreen,
+    navigationOptions: () => ({
+      headerBackTitle: null,
+    }),
+  },
+  headerMode: 'float',
 });
 
 HomeStack.navigationOptions = {

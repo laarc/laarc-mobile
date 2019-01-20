@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Laarc",
-    "slug": "Laarc",
+    "slug": "laarc",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "https://laarc.io",
+    "githubUrl": "https://github.com/laarc/laarc-mobile"
   }
 }
